@@ -1,0 +1,30 @@
+<div class="container">
+
+    <table class="table table-striped table-hover">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Contact-Address</th>
+         
+          
+          
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of items">
+          <td>{{item.id}}</td>
+          <td>{{item.stockName}}</td>
+          <td>{{item.contactAddress}}</td>
+    
+          
+         <td>
+           <!-- <button on-click='Getitem(item.itemId)'>Details</button> -->
+           <button on-click='DeleteItem(item.stockName)'>Delete</button>
+         </td>
+        </tr>
+      </tbody>
+    </table>
+  
+  </div>
+  

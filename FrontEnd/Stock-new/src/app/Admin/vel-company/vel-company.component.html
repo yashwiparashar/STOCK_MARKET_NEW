@@ -1,0 +1,32 @@
+<div class="container">
+
+    <table class="table table-striped table-hover">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Turnover</th>
+          <th>CEO</th>
+          <th>LISTED-STOCK-EXCHANGE</th>
+          
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of items">
+          <td>{{item.companyId}}</td>
+          <td>{{item.companyName}}</td>
+          <td>{{item.turnover}}</td>
+          <td>{{item.ceo}}</td>
+          <td>{{item.listedStockExch}}</td>
+         
+          
+         <td>
+           <!-- <button on-click='Getitem(item.itemId)'>Details</button> -->
+           <button on-click='DeleteItem(item.companyName)'>Delete</button>
+         </td>
+        </tr>
+      </tbody>
+    </table>
+  
+  </div>
+  

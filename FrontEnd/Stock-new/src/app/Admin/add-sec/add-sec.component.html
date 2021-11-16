@@ -1,0 +1,18 @@
+<h2>ADD-COMPANY</h2>
+<form #login ="ngForm" (ngSubmit)="submit()">
+
+    <div class="form-group">
+        <label for="id">ID</label>
+        <input  ngModel name="id"  #id="ngModel" id="mail"type="number" class="form-control">
+    </div>
+
+    <div class="form-group">
+    <label for="firstName">SECTOR-NAME</label>
+    <input   name="name"  #name="ngModel" [(ngModel)]="company.sectorName" id="firstName"type="text" class="form-control"  >
+</div>
+
+
+
+<button class="btn btn-primary" type="submit" on-click='AddUser()'>Submit</button>
+
+</form>

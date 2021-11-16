@@ -1,0 +1,30 @@
+<h2>ADD-COMPANY</h2>
+<form #login ="ngForm" (ngSubmit)="submit()">
+
+    <div class="form-group">
+        <label for="id">ID</label>
+        <input  ngModel name="id"  #id="ngModel" id="mail"type="number" class="form-control">
+    </div>
+
+    <div class="form-group">
+    <label for="firstName">NAME</label>
+    <input   name="name"  #name="ngModel" [(ngModel)]="company.companyName" id="firstName"type="text" class="form-control"  >
+</div>
+<div class="form-group">
+    <label for="mail">TURNOVER</label>
+    <input email  name="mail"   [(ngModel)]="company.turnover" #mail="ngModel" id="mail"type="number" class="form-control">
+</div>
+<div class="form-group">
+    <label for="password">CEO</label>
+    <input ngModel name="stockExchange"  [(ngModel)]="company.ceo"  #stockExchange="ngModel" id="password"type="text" class="form-control">
+</div>
+
+<div class="form-group">
+    <label for="password">LISTED-STOCK-EXCHANGE</label>
+    <input ngModel name="stockExchange"  [(ngModel)]="company.listedStockExch"  #stockExchange="ngModel" id="password"type="text" class="form-control">
+</div>
+
+
+<button class="btn btn-primary" type="submit" on-click='AddUser()'>Submit</button>
+
+</form>

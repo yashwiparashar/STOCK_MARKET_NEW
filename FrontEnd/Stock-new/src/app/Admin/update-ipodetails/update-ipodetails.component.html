@@ -1,0 +1,33 @@
+<h2>ADD-IPO</h2>
+<form #login ="ngForm" (ngSubmit)="submit()">
+
+    <div class="form-group">
+        <label for="id">ID</label>
+        <input  ngModel name="id"  #id="ngModel" id="mail"type="number" class="form-control">
+    </div>
+
+    <div class="form-group">
+    <label for="firstName">NAME</label>
+    <input   name="name"  #name="ngModel" [(ngModel)]="ipo.ipoCompanyName" id="firstName"type="text" class="form-control"  >
+</div>
+<div class="form-group">
+    <label for="mail">PRICE</label>
+    <input email  name="mail"   [(ngModel)]="ipo.price" #mail="ngModel" id="mail"type="number" class="form-control">
+</div>
+<div class="form-group">
+    <label for="password">STOCK-EXCHANGE</label>
+    <input ngModel name="stockExchange"  [(ngModel)]="ipo.stockExchange"  #stockExchange="ngModel" id="password"type="text" class="form-control">
+</div>
+<div class="form-group">
+    <label for="firstName"> TOTAL-SHARES </label>
+    <input   name="totalShares"  #totalShares="ngModel" [(ngModel)]="ipo.totalShares " id="totalShares"type="number" class="form-control"  >
+</div>
+<div class="form-group">
+    <label for="firstName">DATA-ADDED</label>
+    <input   name="DateAdded"  #DateAdded="ngModel" [(ngModel)]="ipo.dateAdded" id="DateAdded"type="Date" class="form-control"  >
+</div>
+
+
+<button class="btn btn-primary" type="submit" on-click='AddUser()'>Submit</button>
+
+</form>
